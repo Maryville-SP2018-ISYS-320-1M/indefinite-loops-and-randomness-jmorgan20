@@ -6,7 +6,7 @@
 
 /*
  How many times do you expect the loop to repeat? Remember that 
- “zero,” “infinity,” and “unknown” are legal answers.
+ 
  
  What do you expect the loop to output?
  
@@ -41,7 +41,12 @@ public class P1_LoopPredictions {
 		
 		
 		// copy and paste the loop to test between here, between the println statements
-		
+		// a
+		int x = 1;
+		while( x < 100 ) {
+		    System.out.print(x + " ");
+		    x += 10;
+		}
 				
 		System.out.println("ENDING LOOP TEST");
 	}
