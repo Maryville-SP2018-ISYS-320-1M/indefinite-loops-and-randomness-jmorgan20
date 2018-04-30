@@ -6,32 +6,32 @@
 
 /*
  How many times do you expect the loop to repeat? Remember that 
- “zero,” “infinity,” and “unknown” are legal answers.
+
  
  What do you expect the loop to output?
  
  (a)
- Repeats:
- Expected output:
+ Repeats:numbers
+ Expected output:increments of 10
  (b)
- Repeats:
- Expected output:
+ Repeats: a countdown of number
+ Expected output:countdown
  (c)
  Repeats:
- Expected output:
+ Expected output:no clue
  (d)
  Repeats:
- Expected output:
+ Expected output:no clue
    
  */
 
 /*
  Was your prediction correct?
  
- (a)
- (b)
- (c)
- (d)
+ (a)yes
+ (b)yes
+ (c)no
+ (d)no 
 
 */
 public class P4_DoLoopPredictions {
@@ -41,7 +41,11 @@ public class P4_DoLoopPredictions {
 		
 		
 		// copy and paste the loop to test between here, between the println statements
-		
+		String word = "a";
+		do {
+		    word = "b" + word + "b";
+		} while( word.length() < 10 );
+		System.out.println( word );
 				
 		System.out.println("ENDING LOOP TEST");
 
